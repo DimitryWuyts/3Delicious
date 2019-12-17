@@ -31,10 +31,20 @@
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+        var x = document.getElementById("op-one").value;
+        var y = document.getElementById("op-two").value;
+        var a = Number(x);
+        var b = Number(y);
+        var multiply = a * b;
+        alert(multiply);
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        var x = document.getElementById("op-one").value;
+        var y = document.getElementById("op-two").value;
+        var a = Number(x);
+        var b = Number(y);
+        var divide = a / b;
+        alert(divide);
     });
 })();
