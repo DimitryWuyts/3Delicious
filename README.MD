@@ -1,4 +1,4 @@
-# 3Delicious
+## 3Delicious
 
 # project by : Chihyu,  Joeri, Thibaut, Dimitry
 
