@@ -1,0 +1,14 @@
+#banner #cta {
+    color: #0090c5;
+}
+
+#faq-btn {
+    color: white;
+}
+
+#banner {
+    background: url("images/food_closeup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: 0 200%;
+}
