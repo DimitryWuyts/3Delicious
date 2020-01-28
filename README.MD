@@ -6,7 +6,7 @@
 
 ## Link to exercise : https://github.com/becodeorg/atw-giertz-2-17/tree/master/2.The-Hills/Project/JS-agile-week
 
-## link to beginner's guide agile workmethod : https://linchpinseo.com/the-agile-method/
+## link to beginner's guide agile work method : https://linchpinseo.com/the-agile-method/
 
 *Dont be afraid to kill your babys!*
 
