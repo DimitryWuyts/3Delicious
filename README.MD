@@ -12,4 +12,4 @@
 
 ![Dimitry](https://pics.me.me/so-youre-telling-me-buildingawallisimmoral-but-killing-babies-is-a-47381539.png)
 
-Day 3-4-5 members Thibaut, Dimitry and Chi got knocked out by the flue...
+Day 3-4-5 members Thibaut, Dimitry and Chi got knocked out by the flue...(Thursday 30/01/2020)
