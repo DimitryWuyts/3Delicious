@@ -1,5 +1,7 @@
 document.getElementById("buttonFood").addEventListener("click",function () {
-    let foodInput = document.getElementById("inputFood").value;
+    var foodInput = document.getElementById("inputFood").value;
+
+
 
 
 
@@ -11,26 +13,54 @@ document.getElementById("buttonFood").addEventListener("click",function () {
             return response.json();
         }))
         .then(data => {
-            const upper = foodInput.charAt(0).toUpperCase() + foodInput.substring(1);
-            console.log(upper)
-            var foodName = data.hints[0].food.label;
 
-            if (foodName === foodInput) {
 
-                console.log("juiste naam")
 
-            } else {
-                console.log(foodInput);
-                console.log("niet juiste@!#!@#!")
-            }
-            //testing to see if it works
+
             console.log(data);
-            console.log(data.text);
-            console.log(data.hints[0].food.label);
-            console.log(data.hints[0].food.nutrients);
+            for (let i = 0 ; i < data.hints.length; i++) {
+                // console.log(data.hints[i].food);
+                let foodInput = document.getElementById("inputFood").value;
+                let ingredCheck = data.hints[i].food.foodContentsLabel;
+                let foodLabel = data.hints[i].food.label;
+                const upper = foodInput.charAt(0).toUpperCase() + foodInput.substring(1);
 
-            let labelName = data.hints[0].food.label;
-            document.getElementById("mealName").innerHTML = labelName;
+
+                    if (ingredCheck === undefined && foodLabel == upper) {
+
+                        console.log("No ingredients!");
+
+                    } else if (ingredCheck != undefined && foodLabel == upper){
+
+                        console.log("elseiffff");
+                        console.log(ingredCheck);
+                        break;
+                    }
+
+
+
+            }
+            // var foodName = data.hints[0].food.label;
+            // console.log(foodName)
+
+            // if (foodName === upper) {
+            //
+            //     console.log("juiste naam")
+            //
+            // } else {
+            //
+            //     console.log(upper)
+            //     console.log(foodInput);
+            //     console.log("niet juiste@!#!@#!")
+            // }
+            //testing to see if it works
+            // console.log(data);
+            // console.log(data.text);
+            // console.log(data.hints[0].food.label);
+            // console.log(data.hints[0].food.nutrients);
+
+            // let labelName = data.hints[0].food.label;
+            // document.getElementById("mealName").innerHTML = labelName;
 
         });
 
