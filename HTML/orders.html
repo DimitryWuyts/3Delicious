@@ -6,7 +6,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/orders.css" />
 </head>
+
 <body class="is-preload homepage">
 <div id="page-wrapper">
 
@@ -16,16 +18,16 @@
 
             <!-- Logo -->
             <div id="logo">
-                <h1>3Delicious</h1>
+                <h1 id="title"><a href="../index.html">3Delicious</a></h1>
             </div>
 
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="../index.html">Home</a></li>
-                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="orders.html">Orders</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
                 </ul>
             </nav>
 
@@ -37,18 +39,31 @@
         <div id="banner" class="box container">
             <div class="row">
                 <div class="col-7 col-12-medium">
-                    <h2>Your best personal chef is just a few steps away</h2>
+                    <h2 id="cta">Your best personal chef is just a few steps away</h2>
                     <p>Order your 3D-licious printer now!</p>
                 </div>
                 <div class="col-5 col-12-medium">
                     <ul>
-                        <li><a href="#" class="button large icon solid fa-arrow-circle-right">I'm hungry!</a></li>
-                        <li><a href="faq.html" class="button alt large icon solid fa-question-circle">I'm not so sure yet</a></li>
+                        <li><a href="#features-wrapper" class="button large icon solid fa-arrow-circle-right">I'm hungry!</a></li>
+                        <li><a href="faq.html" id="faq-btn" class="button alt large icon solid fa-question-circle">I'm not quite sure yet</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!--Input-->
+    <div id="input-form">
+        <form>
+            <input type="text" id="inputFood" placeholder="insert food">
+            <input type="text" id="inputDrinks" placeholder="insert drink">
+            <button type="button" id="buttonFood">Search Food</button>
+            <button type="button" id="buttonDrink">Search Drink</button>
+        </form>
+    </div>
+
+
 
     <!-- Features -->
     <div id="features-wrapper">
@@ -56,24 +71,31 @@
             <div class="row">
                 <div class="col-4 col-12-medium">
 
-                    <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic01.jpg" alt="" /></a>
-                        <div class="inner">
-                            <header>
-                                <h2>Put something here</h2>
-                                <p>Maybe here as well I think</p>
-                            </header>
-                            <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+                        <!-- Box -->
+                        <a href="#" class="image featured"><img id="cockImg" src=""></a>
+                        <div id="meal">
+                            <h2 id="mealName"></h2>
+                            <ul id="ingred">
+                                <li id="ing1"></li>
+                            </ul>
+                        </div>
+                        <div id="cocktail">
+                            <h4 id="cockName"></h4>
+                            <h4 id="cockGlass"></h4>
+                            <h4 id="cockingred"></h4>
+                            <h4 id="cockInstructions"></h4>
+
                         </div>
                     </section>
+
 
                 </div>
                 <div class="col-4 col-12-medium">
 
                     <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image featured"><img src="../assets/css/images/pic02.jpg" alt="" /></a>
                         <div class="inner">
                             <header>
                                 <h2>An interesting title</h2>
@@ -88,7 +110,7 @@
 
                     <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image featured"><img src="../assets/css/images/pic03.jpg" alt="" /></a>
                         <div class="inner">
                             <header>
                                 <h2>Oh, and finally ...</h2>
@@ -105,7 +127,7 @@
 
                     <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic01.jpg" alt="" /></a>
+                        <a href="#" class="image featured"><img src="../assets/css/images/pic01.jpg" alt="" /></a>
                         <div class="inner">
                             <header>
                                 <h2>Put something here</h2>
@@ -120,7 +142,7 @@
 
                     <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image featured"><img src="../assets/css/images/pic02.jpg" alt="" /></a>
                         <div class="inner">
                             <header>
                                 <h2>An interesting title</h2>
@@ -135,7 +157,7 @@
 
                     <!-- Box -->
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="../images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image featured"><img src="../assets/css/images/pic03.jpg" alt="" /></a>
                         <div class="inner">
                             <header>
                                 <h2>Oh, and finally ...</h2>
@@ -162,10 +184,10 @@
                             <h3>Interesting stuff</h3>
                             <div class="grid">
                                 <div class="row gtr-50">
-                                    <div class="col-6"><a href="#" class="image fit"><img src="../images/pic04.jpg" alt="" /></a></div>
-                                    <div class="col-6"><a href="#" class="image fit"><img src="../images/pic05.jpg" alt="" /></a></div>
-                                    <div class="col-6"><a href="#" class="image fit"><img src="../images/pic06.jpg" alt="" /></a></div>
-                                    <div class="col-6"><a href="#" class="image fit"><img src="../images/pic07.jpg" alt="" /></a></div>
+                                    <div class="col-6"><a href="#" class="image fit"><img src="../assets/css/images/pic04.jpg" alt="" /></a></div>
+                                    <div class="col-6"><a href="#" class="image fit"><img src="../assets/css/images/pic05.jpg" alt="" /></a></div>
+                                    <div class="col-6"><a href="#" class="image fit"><img src="../assets/css/images/pic06.jpg" alt="" /></a></div>
+                                    <div class="col-6"><a href="#" class="image fit"><img src="../assets/css/images/pic07.jpg" alt="" /></a></div>
                                 </div>
                             </div>
                             <a href="#" class="button icon fa-file-alt">More</a>
@@ -199,13 +221,13 @@
 
                     <!-- Links -->
                     <section class="widget links">
-                        <h3>Random Stuff</h3>
+                        <h3>More</h3>
                         <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            <li><a href="#">Let's Just</a></li>
+                            <li><a href="#">Pretend</a></li>
+                            <li><a href="#">There's A Lot</a></li>
+                            <li><a href="#">Of Links</a></li>
+                            <li><a href="#">Around Here</a></li>
                         </ul>
                     </section>
 
@@ -214,13 +236,13 @@
 
                     <!-- Links -->
                     <section class="widget links">
-                        <h3>Random Stuff</h3>
+                        <h3>Info</h3>
                         <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                            <li><a href="SYKEBITCHYOUTHOUGHT">Jobs</a></li>
                         </ul>
                     </section>
 
@@ -229,13 +251,13 @@
 
                     <!-- Links -->
                     <section class="widget links">
-                        <h3>Random Stuff</h3>
+                        <h3></h3>
                         <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                            <li><a href="#">You'd Think</a></li>
+                            <li><a href="#">We'd Put</a></li>
+                            <li><a href="#">Links To Other</a></li>
+                            <li><a href="#">But No</a></li>
+                            <li><a href="#">Dream On, Loser</a></li>
                         </ul>
                     </section>
 
@@ -263,7 +285,7 @@
                 <div class="col-12">
                     <div id="copyright">
                         <ul class="menu">
-                            <li>&copy; Untitled. All rights reserved</li>
+                            <li>&copy; 3Delicious. All rights reserved</li>
                         </ul>
                     </div>
                 </div>
@@ -274,13 +296,13 @@
 </div>
 
 <!-- Scripts -->
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.dropotron.min.js"></script>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>
