@@ -7,3 +7,23 @@
 .button.alt {
     color: white;
 }
+
+#title{
+    color: white;
+    font-weight: 800;
+}
+
+#hungry {
+    color: white ;
+}
+
+.boxid {
+    color: black;
+}
+#bannerid {
+    color: white;
+}
+
+#more {
+    margin-top: 60px;
+}
