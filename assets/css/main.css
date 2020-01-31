@@ -2323,3 +2323,12 @@ input, select, textarea {
 			}
 
 	}
+
+#new-logo {
+	max-height: 25%;
+	max-width: 25%;
+}
+
+#last {
+	margin-top: 20%;
+}
