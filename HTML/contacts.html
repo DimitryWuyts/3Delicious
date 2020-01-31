@@ -34,30 +34,30 @@
     </div>
 
     <div class="container">
-        <div>
-            <section class="d-flex flex-sm-column flex-sm-row">
-
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name">
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email adress" pattern="[^ @]*@[^ @]*" required>
-                <section id="FnameLnameEmail">
-                </section>
+        <!-- email send code-->
+        <form action="mailto:chihyu10@gmail.com" method="post" enctype="text/plain">
 
 
-            </section>
-        </div>
-        <label for="country">Country</label>
-        <input type="text" id="country" name="lastname" placeholder="Tell us where you're from">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write us something.. Or don't. I'm not your boss" style="height:200px"></textarea>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
-        <input type="submit" value="Submit">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email adress" pattern="[^ @]*@[^ @]*" required>
+
+
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Tell us where you're from">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="What do you have to say?" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
 
     </div>
 

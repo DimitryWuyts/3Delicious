@@ -1,15 +1,28 @@
 document.getElementById("buttonFood").addEventListener("click",function () {
-    let food = document.getElementById("inputFood").value;
+    let foodInput = document.getElementById("inputFood").value;
+
+
 
 //
     //fetching data from the API
-    fetch(`https://api.edamam.com/api/food-database/parser?ingr=${food}&app_id=70227da1&app_key=5d1dbda7ef08ad66aaf00a98e2d219bf`)
+    fetch(`https://api.edamam.com/api/food-database/parser?ingr=${foodInput}&app_id=70227da1&app_key=5d1dbda7ef08ad66aaf00a98e2d219bf`)
 
         .then((response => {
             return response.json();
         }))
         .then(data => {
+            const upper = foodInput.charAt(0).toUpperCase() + foodInput.substring(1);
+            console.log(upper)
+            var foodName = data.hints[0].food.label;
 
+            if (foodName === foodInput) {
+
+                console.log("juiste naam")
+
+            } else {
+                console.log(foodInput);
+                console.log("niet juiste@!#!@#!")
+            }
             //testing to see if it works
             console.log(data);
             console.log(data.text);
