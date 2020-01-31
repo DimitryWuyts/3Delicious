@@ -9,6 +9,8 @@ document.getElementById("buttonFood").addEventListener("click",function () {
             return response.json();
         }))
         .then(data => {
+
+            //testing to see if it works
             console.log(data);
             console.log(data.text);
             console.log(data.hints[0].food.label);
@@ -25,15 +27,20 @@ document.getElementById("buttonFood").addEventListener("click",function () {
 document.getElementById("buttonDrink").addEventListener("click",function () {
     let drinks = document.getElementById("inputDrinks").value;
 
+
+    //fetching data from the API
 fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinks}`)
     .then((response => {
         return response.json();
     }))
     .then(cocktaildata => {
+
+
         var cocktail = cocktaildata.drinks[0];
 
         document.getElementById("cockName").innerHTML = "Name: " + cocktail.strDrink;
 
+        //getting image of the cocktail and displaying it as an image
         let cockImg = document.getElementById("cockImg");
         cockImg.src = cocktail.strDrinkThumb;
 
@@ -41,6 +48,7 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinks}`)
 
         document.getElementById("cockInstructions").innerHTML = "Instructions: " + cocktail.strInstructions;
 
+        //testing
         console.log(cocktail)
         console.log(cockImg)
 
