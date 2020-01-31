@@ -11,6 +11,7 @@
 #title{
     color: white;
     font-weight: 800;
+    text-decoration: none;
 }
 
 #hungry {
@@ -27,3 +28,5 @@
 #more {
     margin-top: 60px;
 }
+
+
